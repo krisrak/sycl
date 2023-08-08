@@ -5,6 +5,7 @@
 int main(){
   // create a sycl queue with GPU device
   sycl::queue q (sycl::gpu_selector_v);
+  std::cout << "Offload Device: " << q.get_device().get_info<sycl::info::device::name>() << "\n";
 
   // initialize an array
   const int N = 1024;
