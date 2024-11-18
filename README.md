@@ -28,6 +28,9 @@ SYCL is template library specification for C++ that enables programming applicat
 ||| [sub_group_reduce.cpp](group/sub_group_reduce.cpp) | reduction group algorithm on sub-group
 ||| [sub_group_shuffle.cpp](group/sub_group_shuffle.cpp) | shuffle group algorithm on sub-group
 ||| [local_mem.cpp](group/local_mem.cpp) | access local memory on device for faster computation
+|Device Info| [device_info](device_info)|  [device_info_sycl.cpp](device_info/device_info_sycl.cpp) | Get GPU device info using SYCL
+||| [device_info_cl.cpp](device_info/device_info_cl.cpp) | Get extra GPU device info using OpenCL backend
+||| [device_info_ze.cpp](device_info/device_info_ze.cpp) | Get extra GPU device info using Level-Zero backend
 
 ## Compiling SYCL examples
 - Download and Install C++ SYCL Compiler: [Intel oneAPI C++/DPC++ Compiler](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html)
